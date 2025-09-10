@@ -1,0 +1,142 @@
+4.1 Basic Syntax Rules
+ Case Sensitivity
+ Python is case-sensitive, meaning that 
+identifiers.
+ name = "John"    
+Variable , 
+variable , and 
+# This is different from
+ Name = "Jane"    
+# this variable
+ VARIABLE are three different
+ Line Structure
+ Python statements typically end with a newline character. Unlike languages like C++ or Java,
+ Python doesn't require semicolons to end statements.
+ print("Hello, World!")  # This is a complete statement
+ x = 5                    
+# This is another complete statement
+ Multiple Statements on One Line
+ While not recommended for readability, you can place multiple statements on one line using
+ semicolons:
+ x = 1; y = 2; z = 3
+ Line Continuation
+ For long statements, you can use the backslash (\) character to continue on the next line:
+ total = 1 + 2 + 3 + \
+ 4 + 5 + 6 + \
+7 + 8 + 9
+ 4.2 Comments and Documentation
+ Comments are essential for explaining your code and making it more readable. Python supports
+ two types of comments:
+ Single-Line Comments
+ Use the hash symbol (#) to create single-line comments:
+ # This is a single-line comment
+ print("Hello, World!")  # This is also a comment
+ Multi-Line Comments
+ Python doesn't have a specific multi-line comment syntax, but you can use triple quotes for multi
+line strings that serve as comments:
+ """
+ This is a multi-line comment
+ or docstring. It can span
+ multiple lines.
+ """
+ Docstrings
+ Docstrings are special comments used to document functions, classes, and modules:
+ def greet(name):
+ """
+ This function greets a person with the given name.
+ Args:
+ name (str): The name of the person to greet
+ Returns:
+ str: A greeting message
+ """
+ return f"Hello, {name}!"
+ 4.3 Indentation and Code Structure
+ One of Python's most distinctive features is its use of indentation to define code blocks. While
+ other languages use braces {} or keywords, Python uses consistent indentation.
+ Importance of Indentation
+ Indentation is not just for readability in Python—it's part of the syntax. Incorrect indentation will
+ result in an 
+IndentationError .
+# Correct indentation
+ if 5 > 3:
+ print("Five is greater than three")
+ print("This is also part of the if block")
+ print("This is outside the if block")
+ # Incorrect indentation (will cause an error)
+ if 5 > 3:
+ print("This will cause an IndentationError")
+ Indentation Rules
+ Use 4 spaces per indentation level (recommended)
+ Be consistent throughout your code
+ Don't mix tabs and spaces
+ All statements at the same level must have the same indentation
+ # Good indentation example
+ def calculate_area(length, width):
+ if length > 0 and width > 0:
+ area = length * width
+ return area
+ else:
+ return 0
+ 5. Variables in Python
+ Variables are containers that store data values. In Python, you don't need to declare variables
+ explicitly or specify their data type—Python automatically determines the type based on the value
+ assigned.
+ Variable Assignment
+ Creating a variable in Python is as simple as assigning a value to a name:
+ # Creating variables
+ name = "Alice"
+ age = 25
+ height = 5.6
+ is_student = True
+ Variable Naming Rules
+ Variable names must start with a letter (a-z, A-Z) or underscore (_)
+ Variable names can contain letters, numbers, and underscores
+ Variable names are case-sensitive
+ Variable names cannot be Python keywords
+Valid Variable Names:
+ name = "John"
+ first_name = "John"
+ firstName = "John"  # camelCase (less common in Python)
+ name1 = "John"
+ _name = "John"
+ Invalid Variable Names:
+ # These will cause errors
+ 2name = "John"      
+# Cannot start with a number
+ first-name = "John" # Hyphens are not allowed
+ class = "Python"    
+# 'class' is a reserved keyword
+ Variable Naming Conventions
+ Python follows specific naming conventions (PEP 8):
+ Use lowercase letters with underscores for variable names (snake_case)
+ Use descriptive names that explain the variable's purpose
+ Avoid single-letter variables except for short loops
+ # Good naming examples
+ user_name = "alice123"
+ total_price = 29.99
+ is_valid_email = True
+ student_count = 30
+ # Less ideal naming examples
+ n = "alice123"        
+totalPrice = 29.99    
+x = True              
+# Not descriptive
+ # camelCase (not Python convention)
+ # Not descriptive
+ Multiple Assignment
+ Python allows you to assign values to multiple variables in various ways:
+ # Assign the same value to multiple variables
+ x = y = z = 10
+ # Assign different values to multiple variables
+ a, b, c = 1, 2, 3
+ # Swap variables
+ x, y = 5, 10
+ x, y = y, x  # Now x = 10, y = 5
+ Checking Variable Type
+Use the 
+type() function to check a variable's data type:
+ name = "Alice"
+ age = 25
+ print(type(name))  # <class 'str'>
+ print(type(age))   
+# <class 'int'>
