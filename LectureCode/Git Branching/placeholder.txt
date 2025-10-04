@@ -1,0 +1,127 @@
+1. What Branching Is (In Simple Terms)
+
+Think of your project as a tree:
+
+The main trunk = your main branch (often called main or master).
+
+Branches = separate lines of development — you can experiment, build features, or fix bugs without touching the main code.
+
+When you’re done, you can merge a branch back into main.
+
+✅ Goal: Safe experimentation + clean collaboration.
+
+⚙️ 2. Creating and Working With Branches
+
+Let’s walk through the common commands.
+
+Step 1: See your current branches
+git branch
+
+
+You’ll see something like:
+
+* main
+
+
+(* means your current branch.)
+
+Step 2: Create a new branch
+git branch feature-login
+
+
+This creates a new branch called feature-login.
+
+Step 3: Switch to that branch
+git checkout feature-login
+
+
+Now you’re working inside that branch.
+Any commits you make stay here — main is untouched.
+
+(In newer Git versions, you can do this in one command:)
+
+git switch -c feature-login
+
+Step 4: Make changes and commit
+git add .
+git commit -m "Add login feature"
+
+Step 5: Switch back to main
+git switch main
+
+
+You’ll see your login code is gone — because it’s in the other branch.
+
+🔀 3. Merging a Branch
+
+When your feature is ready:
+
+Switch to main:
+
+git switch main
+
+
+Merge your branch:
+
+git merge feature-login
+
+
+If there are no conflicts, Git combines your work.
+If there are conflicts, Git will show you the files to fix manually.
+
+Optionally, delete the branch:
+
+git branch -d feature-login
+
+🧩 4. Typical Workflow
+
+A standard flow in many teams:
+
+main
+ ├─ feature/landing-page
+ ├─ bugfix/login-error
+ ├─ hotfix/payment-bug
+ └─ release/v1.0
+
+
+You:
+
+Branch off main
+
+Build a feature
+
+Merge via pull request (if using GitHub/GitLab)
+
+Delete the branch once merged
+
+🌍 5. Working With Remote Branches (GitHub, GitLab, etc.)
+
+Push your new branch to remote:
+
+git push -u origin feature-login
+
+
+Later, you can:
+
+Create a Pull Request (PR) on GitHub to merge it into main.
+
+Discuss, review, and merge cleanly.
+
+🧱 6. Common Commands Cheat Sheet
+Task	Command
+Create a branch	git branch <name>
+Switch branch	git switch <name>
+Create & switch	git switch -c <name>
+List branches	git branch
+Delete branch	git branch -d <name>
+Merge branch	git merge <name>
+Push branch	git push -u origin <name>
+See merged branches	git branch --merged
+🔁 7. Visualization Tip
+
+You can visualize your branches easily:
+
+git log --oneline --graph --all
+
+
+This shows how commits and branches diverge and merge — super helpful.
