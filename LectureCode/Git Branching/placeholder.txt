@@ -78,8 +78,8 @@ git branch -d feature-login
 A standard flow in many teams:
 
 main
- ├─ feature/landing-page
- ├─ bugfix/login-error
+ ├─ feature/landing-page.html
+ ├─ bugfix/login-error.html
  ├─ hotfix/payment-bug
  └─ release/v1.0
 
@@ -109,6 +109,7 @@ Discuss, review, and merge cleanly.
 
 🧱 6. Common Commands Cheat Sheet
 Task	Command
+
 Create a branch	git branch <name>
 Switch branch	git switch <name>
 Create & switch	git switch -c <name>

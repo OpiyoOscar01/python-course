@@ -1,0 +1,6 @@
+1. Create a repository on Github and name "Python-course-solution"
+2.Handle the exercise and group the folders by Lectures.
+3.Practice git branching and make the commits/push the changes to github.
+4.Share the github link.
+5.Peer Review.
+6.Make comments and working solutions where there are challenges.
