@@ -1,0 +1,5 @@
+Statistics Results:
+Sum: 4.0
+Average: 2.0
+Minimum: 1.0
+Maximum: 3.0
