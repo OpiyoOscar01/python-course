@@ -1,0 +1,36 @@
+Lecture 1.
+
+Lecture Objectives:
+
+By the end of this lecture, learners will be able to:
+
+1. Understand the concept of a class as a blueprint for creating objects.
+
+2. Create Python classes with attributes and methods.
+
+3. Instantiate objects (create instances) from classes.
+
+4. Access and modify attributes of objects.
+
+5. Define and call methods to perform actions with objects.
+
+6. Apply OOP basics to model simple real-world entities in Python.
+
+Recap:
+
+OOP is a way of organizing your code using classes (blueprints) and objects (instances of those blueprints).
+It helps you model real-world things and their behavior.
+
+Key concepts:
+
+Class → The blueprint of an object
+
+Object / Instance → A specific example of a class
+
+Attributes → Data stored inside an object (like variables)
+
+Methods → Functions that belong to an object (behavior)
+
+Inheritance → Reusing code from another class.
+
+Enough of talk. Let's get to the lab section!

@@ -1,0 +1,71 @@
+Practice the following Questions to solidify your understanding of concepts covered in Lecture 1.
+
+1. Dog Class
+
+Create a class called Dog with these features:
+
+Attributes: name (string), age (int)
+
+Methods:
+
+bark() → prints "<name> is barking!"
+
+birthday() → increases age by 1 and prints "<name> is now <age> years old!"
+
+Task: Create 2 dogs and call all their methods.
+
+2. Rectangle Class
+
+Create a class called Rectangle:
+
+Attributes: length, width
+
+Methods:
+
+area() → returns the area of the rectangle
+
+perimeter() → returns the perimeter of the rectangle
+
+Task: Create a rectangle object and print its area and perimeter.
+
+3. Book Class
+
+Create a class Book with:
+
+Attributes: title, author, pages
+
+Methods:
+
+book_info() → prints "<title> by <author>, <pages> pages"
+
+is_long() → prints "<title> is a long book" if pages > 300, otherwise "<title> is a short book"
+
+Task: Create a few book objects and call their methods.
+
+4. BankAccount Class
+
+Create a class BankAccount with:
+
+Attributes: owner, balance (default 0)
+
+Methods:
+
+deposit(amount) → adds to balance and prints new balance
+
+withdraw(amount) → subtracts from balance if enough money, otherwise prints "Insufficient funds"
+
+Task: Create an account, deposit money, try to withdraw more than balance, then withdraw a valid amount.
+
+5. Movie Class
+
+Create a class Movie with:
+
+Attributes: title, director, rating (out of 10)
+
+Methods:
+
+show_info() → prints "<title> by <director>, rating: <rating>/10"
+
+is_hit() → prints "<title> is a hit!" if rating ≥ 7, else "<title> flopped."
+
+Task: Create 3 movie objects and call all their methods.
